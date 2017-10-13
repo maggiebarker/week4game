@@ -17,7 +17,7 @@ function range(start, end) {
 var randomNum = range(19, 120); // [19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
 console.log(randomNum);
 
-$("#random-" + i).attr('data-value', randomNum );
+// $("#random-" + i).attr('data-value', randomNum );
 	console.log(randomNum);
 
 	random.innerHTML = "<h1>Match Score:<br><br>" + randomNum + "</h1>" ;
@@ -52,14 +52,35 @@ $('.gem-img').on("click", function() {
     
           if (userScore === randomNum) {
             userWins++;
-			wins.innerHTML = "<h2>Wins: " + userWins + "</h2><br><h2>Losses: " + losses + "</h2>";
+            $("#wins").html("<h2>Wins:" + userWins + "</h2>");
+            reset();
           }
-	        else {
+	        else if( userScore >= randomNum) {
             losses++;
-            wins.innerHTML = "<h2>Wins: " + userWins + "</h2><br><h2>Losses: " + losses + "</h2>";
+            $("#losses").html("<h2>Losses:" + losses + "</h2>");
+            reset();
           } 
+
 })
 
+reset(); 
+
 // Need a function to restart gameplay by resetting the #ranDisplay and #matchbox, while retaining the number of wins/losses in the #counter
+
+function reset() {
+  randomNum = range(19, 120);
+  console.log("new rando num", randomNum);
+  userScore = 0;
+  for (var i = 0; i < 4; i++) {
+  	var crystal = range(1, 12); // [1, 2, 3, 4, 5, 6, 7 . . .]
+  	console.log(crystal);
+	$("#crystal-" + i).attr('data-value', crystal );
+  	console.log(crystalMine);
+  }
+  
+	random.innerHTML = "<h1>Match Score:<br><br>" + randomNum + "</h1>" ;
+ 
+	match.innerHTML = "<h1>Total Score:<br><br>" +  userScore +"</h1>";
+}
 
 });

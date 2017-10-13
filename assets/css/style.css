@@ -18,6 +18,7 @@ body {
 
 .wrapper {
 	width: 90%;
+	height: auto;
 	margin: 0 auto;
 }
 
@@ -43,7 +44,7 @@ body {
 .scoreboard{
 	float: left;
 	margin: 10px;
-	width: 40%;
+	width: 30%;
 	height: 450px;
 	float: left;
 }
@@ -79,13 +80,14 @@ body {
 }
 
 #counter h2{
-	font-size: 36px;
+	font-size: 34px;
 	color:#c3cbd8;
 	font-family: "Germania One";
 	text-align: left;
 }
 
 #crystal-mine{
+	clear: auto;
 	display: inline-block;
 }
 
@@ -97,11 +99,18 @@ body {
 }
 
 .footer {
-	position: fixed:
+	position: absolute:
 	bottom: 0;
 	left: 0;
 	right: 0
 	height: 30px;
 	text-align: center;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	font-size: 12px;
+	font-family: "Germania One";
+	color:#680287;
+
 }
 
