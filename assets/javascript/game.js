@@ -52,12 +52,12 @@ $('.gem-img').on("click", function() {
     
           if (userScore === randomNum) {
             userWins++;
-            $("#wins").html("<h2> Wins: " + userWins + "</h2>");
+			wins.innerHTML = "<h2>Wins: " + userWins + "</h2><br><h2>Losses: " + losses + "</h2>";
           }
 	        else {
             losses++;
-            $("#wins").html("<h2>" + losses + "</h2>");
-          }
+            wins.innerHTML = "<h2>Wins: " + userWins + "</h2><br><h2>Losses: " + losses + "</h2>";
+          } 
 })
 
 // Need a function to restart gameplay by resetting the #ranDisplay and #matchbox, while retaining the number of wins/losses in the #counter
