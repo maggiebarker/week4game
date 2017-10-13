@@ -6,6 +6,8 @@ var random = document.getElementById("ranDisplay");
 var wins = document.getElementById("counter");
 var match =document.getElementById("matchbox");
 var userScore = 0;
+var userWins = 0;
+var losses = 0;
 
 // Need an array that goes from 19-120 (random number) and a function to display the selected random number in the #ranDisplay
 
@@ -48,8 +50,17 @@ $('.gem-img').on("click", function() {
 
 })
 
-
 // Need a function that declares a win/loss to be displayed in the #counter
+    
+          if (userScore === randomNum) {
+            userWins++;
+            $("#wins").html("<h2> Wins: " + userWins + "</h2>");
+          }
+	        else {
+            losses++;
+            $("#wins").html("<h2> Loser! </h2>");
+          }
+
 
 // Need a function to restart gameplay by resetting the #ranDisplay and #matchbox, while retaining the number of wins/losses in the #counter
 
