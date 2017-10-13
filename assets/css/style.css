@@ -63,20 +63,26 @@ body {
 	background-color: #428c28;
 }
 
-#counter {
+#matchbox{
 	width: 200px;
-	height: 131px;
+	height: 130px;
 	margin-bottom: 20px;
 	border: 2px solid #680287;
 	background-color: #428c28;
 }
 
-#matchbox{
+#counter {
 	width: 200px;
-	height: 130px;
+	height: 131px;
 	border: 2px solid #680287;
 	background-color: #428c28;
+}
 
+#counter h2{
+	font-size: 36px;
+	color:#c3cbd8;
+	font-family: "Germania One";
+	text-align: left;
 }
 
 #crystal-mine{
