@@ -48,6 +48,13 @@ body {
 	float: left;
 }
 
+.scoreboard h1{
+	font-size: 36px;
+	color:#c3cbd8;
+	font-family: "Germania One";
+	text-align: center;
+}
+
 #ranDisplay {
 	width: 200px;
 	height: 131px;
