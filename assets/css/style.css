@@ -17,15 +17,17 @@ body {
 }
 
 .wrapper {
-	width: 90%;
+	width: 50%;
+	min-height: 900px;
+	padding: 20px;
 	height: auto;
 	margin: 0 auto;
 }
 
 .instruction-box {
 	width: 40%;
-	max-width: 300px;
-	height: 440px;
+	max-width: 350px;
+	height: 600px;
 	margin: 10px;
 	border: 2px solid #680287;
 	text-align: left;
@@ -50,37 +52,37 @@ body {
 }
 
 .scoreboard h1{
-	font-size: 36px;
+	font-size: 40px;
 	color:#c3cbd8;
 	font-family: "Germania One";
 	text-align: center;
 }
 
 #ranDisplay {
-	width: 200px;
-	height: 131px;
+	width: 240px;
+	height: 184px;
 	margin-bottom: 20px;
 	border: 2px solid #680287;
 	background-color: #428c28;
 }
 
 #matchbox{
-	width: 200px;
-	height: 130px;
+	width: 240px;
+	height: 184px;
 	margin-bottom: 20px;
 	border: 2px solid #680287;
 	background-color: #428c28;
 }
 
 #counter {
-	width: 200px;
-	height: 131px;
+	width: 240px;
+	height: 183px;
 	border: 2px solid #680287;
 	background-color: #428c28;
 }
 
 #counter h2{
-	font-size: 34px;
+	font-size: 36px;
 	color:#c3cbd8;
 	font-family: "Germania One";
 	text-align: left;
