@@ -17,7 +17,7 @@ body {
 }
 
 .wrapper {
-	width: 50%;
+	width: 60%;
 	min-height: 900px;
 	padding-left: 100px;
 	height: auto;
@@ -25,7 +25,7 @@ body {
 }
 
 .instruction-box {
-	width: 40%;
+	width: 45%;
 	max-width: 350px;
 	height: 600px;
 	margin: 10px;
@@ -46,7 +46,7 @@ body {
 .scoreboard{
 	float: left;
 	margin: 10px;
-	width: 30%;
+	width: 45%;
 	height: 450px;
 	float: left;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 #ranDisplay {
-	width: 240px;
+	width: 95%;
 	height: 184px;
 	margin-bottom: 20px;
 	border: 2px solid #680287;
@@ -67,7 +67,7 @@ body {
 }
 
 #matchbox{
-	width: 240px;
+	width: 95%;
 	height: 184px;
 	margin-bottom: 20px;
 	border: 2px solid #680287;
@@ -75,7 +75,7 @@ body {
 }
 
 #counter {
-	width: 240px;
+	width: 95%;
 	height: 183px;
 	border: 2px solid #680287;
 	background-color: #428c28;
@@ -89,22 +89,23 @@ body {
 }
 
 #crystal-mine{
+	width: 100%;
 	clear: auto;
 	display: inline-block;
 }
 
 .gem-img{
-	width: 110px;
+	width: 20%;
 	height: auto;
 	border: 2px solid #428c28;
-	margin: 10px;
+	margin: 7px;
 }
 
 .footer {
 	position: absolute:
 	bottom: 0;
 	left: 0;
-	right: 0
+	right: 0;
 	height: 30px;
 	text-align: center;
 	width: 100%;
